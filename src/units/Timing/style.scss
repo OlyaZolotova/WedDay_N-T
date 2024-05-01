@@ -1,0 +1,132 @@
+.timing {
+  margin-bottom: 70px;
+  .container {
+    max-width: 320px;
+    padding: 0 10px;
+    margin: 0 auto;
+    position: relative;
+    @media (min-width: 430px) {
+      max-width: 430px;
+      padding: 0 15px;
+    }
+    @media (min-width: 768px) {
+      max-width: 550px;
+    }
+    @media (min-width: 1024px) {
+      max-width: 700px;
+    }
+    @media (min-width: 1280px) {
+      max-width: 800px;
+    }
+  }
+  &__wrapper {
+    margin-bottom: 60px;
+  }
+  &__img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    @media (min-width: 1024px) {
+      margin-bottom: 50px;
+    }
+    &-1024 {
+      @media (min-width: 1280px) {
+        display: none;
+      }
+    }
+    &-1280 {
+      @media (min-width: 1024px) {
+        display: none;
+      }
+      @media (min-width: 1280px) {
+        display: block;
+      }
+    }
+  }
+  &__content {
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+  &__content2 {
+    display: none;
+    @media (min-width: 1024px) {
+      display: block;
+    }
+  }
+  &__png {
+    height: 100%;
+    object-fit: cover;
+  }
+  &__textwraptop {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1167px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  &__textwrapbottom {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 727px;
+    width: 100%;
+  }
+  &__textwrap {
+    position: relative;
+  }
+
+  &__title {
+    font-family: "Wonder Garden";
+    font-weight: 300;
+    font-size: 120px;
+    line-height: 144px;
+    text-align: center;
+    color: #1e1e1e;
+    margin-bottom: 20px;
+    @media (min-width: 1024px) {
+      font-size: 190px;
+      line-height: 210px;
+    }
+  }
+  &__subtitle {
+    font-family: "Source Serif 4", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #1e1e1e;
+    margin-bottom: 5px;
+    @media (min-width: 1024px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  &__text {
+    font-family: "Source Serif 4", serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #1e1e1e;
+    @media (min-width: 1024px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  &__textwrapper {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+       @media (min-width: 1280px) {
+   padding: 0 20px;
+    }
+  }
+}

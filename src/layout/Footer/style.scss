@@ -1,0 +1,68 @@
+.footer {
+  position: relative;
+  padding: 160px 15px 110px;
+          @media (min-width: 1024px) {
+  padding: 200px 50px 200px;
+  }
+  &__title {
+    font-family: "Wonder Garden";
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 45px;
+    text-align: center;
+    color: #1e1e1e;
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+   @media (min-width: 768px) {
+   
+        max-width: 900px;
+  }
+        @media (min-width: 1024px) {
+    font-size: 150px;
+    line-height: 180px;
+        max-width: 900px;
+  }
+  @media (min-width: 1280px) {
+ font-size: 150px;
+    line-height: 180px;
+  }
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+            @media (min-width: 1024px) {
+   width: 180px;
+  }
+
+    
+    &-one {
+      top: -160px;
+    left: -20px;
+    transform: rotate(0deg);
+              @media (min-width: 1024px) {
+    left: -55px;
+                top: -200px;
+  }
+    }
+       &-two {
+      bottom: -110px;
+      right: -20px;
+      transform: rotate(0deg);
+                    @media (min-width: 1024px) {
+  right: -55px;
+                      bottom: -200px;
+  }
+    
+    }
+    }
+    &__img{
+          width: 100%;
+    height: 100%;
+    object-fit: contain;
+    }
+}

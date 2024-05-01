@@ -1,0 +1,128 @@
+.contacts {
+  margin-bottom: 70px;
+  .container {
+    max-width: 320px;
+    padding: 0 10px;
+    margin: 0 auto;
+    position: relative;
+         @media (min-width: 430px) {
+   max-width: 430px;
+    padding: 0 15px;
+  }
+      @media (min-width: 768px) {
+   max-width: 550px;
+  }
+      @media (min-width: 1024px) {
+   max-width: 800px;
+  }
+      @media (min-width: 1280px) {
+   max-width: 900px;
+  }
+  }
+
+  &__title {
+     font-family: "Source Serif 4", serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #1e1e1e;
+    margin-bottom: 30px;
+                        @media (min-width: 1024px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  }
+  &__link {
+       font-family: "Source Serif 4", serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #1e1e1e;
+    text-decoration: none;
+    border-bottom: 0.7px solid #BBA69A;
+    display: block;
+    max-width: 104px;
+    width: 100%;
+    margin: 0 auto;
+    &:hover {
+      border-bottom: 1px solid #BBA69A;
+      transform: scale(1.1);
+    }
+    &:focus {
+      border-bottom: 1px solid #1e1e1e;
+      transform: scale(1.1);
+    }
+                            @media (min-width: 1024px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  }
+  &__linkwrap {
+    max-width: 290px;
+    width: 100%;
+    margin: 0 auto;
+    border: 3px solid #BBA69A;
+    border-radius:10px;
+    padding: 25px 10px;
+      @media (min-width: 1024px) {
+display: none;
+      }
+ &-1024 {
+  display: none;
+   max-width: 550px;
+   @media (min-width: 1024px) {
+display: block;
+  }
+   @media (min-width: 1280px) {
+ max-width: 650px;
+  }
+  } 
+  }
+    &__text {
+   font-family: "Wonder Garden";
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 50px;
+    text-align: center;
+    color: #1e1e1e;
+    position: relative;
+    margin-bottom: 5px;
+                          @media (min-width: 1024px) {
+    font-size: 80px;
+    line-height: 60px;
+  }
+  }
+  
+}
+.slick-slide {
+      @media (min-width: 1024px) {
+  width: 300px;
+  }
+}
+
+.slick-prev {
+  left: 10px !important; /* Расположение левой стрелки */
+  z-index: 1; /* Чтобы стрелки были поверх слайдов */
+     @media (min-width: 1024px) {
+ left: -70px !important;
+  } 
+  &::before{
+    content: "";
+
+  }
+}
+
+.slick-next {
+  right: 10px !important; /* Расположение правой стрелки */
+  z-index: 1; /* Чтобы стрелки были поверх слайдов */
+    @media (min-width: 1024px) {
+  right: -70px !important;
+  }
+    &::before{
+    content: "";
+
+    
+  }
+}
